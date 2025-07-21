@@ -1,18 +1,12 @@
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { ArrowRight, Star, Users, TrendingUp } from "lucide-react";
-import heroImage from "@/assets/hero-aussie-investment.jpg";
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-background/40 backdrop-blur-[2px]" />
-      </div>
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-muted/20 via-background to-muted/30" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center">
